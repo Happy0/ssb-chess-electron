@@ -14,7 +14,7 @@
 
 </body>
 <script>
-  var ssbClient = require('ssb-client');
+  const ssbClient = require('ssb-client');
 
   ssbClient(
     function(err, sbot) {
@@ -22,7 +22,7 @@
       if (err) {
         throw new Error(err);
       } else {
-        var attachToElement = document.getElementsByClassName("ssb-chess-container")[0];
+        const attachToElement = document.getElementsByClassName("ssb-chess-container")[0];
         require('ssb-chess-mithril')(attachToElement, sbot);
       }
 
