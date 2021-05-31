@@ -19,9 +19,11 @@
   },
   "homepage": "https://github.com/happy0/ssb-chess-electron#readme",
   "dependencies": {
-    "electron": "^13.0.1",
-    "electron-builder": "^22.10.5",
     "ssb-chess-mithril": "1.2.1",
     "ssb-client": "^4.9.0"
+  },
+  "devDependencies": {
+    "electron": "^13.0.1",
+    "electron-builder": "^22.10.5",
   }
 }
