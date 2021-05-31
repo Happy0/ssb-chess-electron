@@ -43,7 +43,7 @@ before_install:
 before_script:
   - git lfs pull
 
-# on PRs and merges to master and prod run tests and build the app
+# on PRs and merges to main run tests and build the app
 script:
   - |
     if [ "$TRAVIS_OS_NAME" == "linux" ]; then
@@ -62,14 +62,13 @@ deploy:
   script: bash deploy.travis.sh
   skip_cleanup: true
   on:
-    branch: master
+    branch: main
     
 before_cache:
   - rm -rf $HOME/.cache/electron-builder/wine
 
 # only run this script on pull requests and merges into 
-# the 'master' and 'prod' branches
+# the 'main' branch
 branches:
   only:
-  - master
-  - prod
+  - main
