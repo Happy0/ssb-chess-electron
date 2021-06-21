@@ -15,15 +15,18 @@
 </body>
 <script>
   const ssbClient = require('ssb-client');
+  const SbotClassic = require('ssb-chess-data-access').SbotClassic;
 
   ssbClient(
     function(err, sbot) {
+
+      const dataAccess = new SbotClassic(sbot);
 
       if (err) {
         throw new Error(err);
       } else {
         const attachToElement = document.getElementsByClassName("ssb-chess-container")[0];
-        require('ssb-chess-mithril')(attachToElement, sbot);
+        require('ssb-chess-mithril')(attachToElement, dataAccess);
       }
 
     });
