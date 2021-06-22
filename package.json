@@ -1,6 +1,6 @@
 {
   "name": "ssb-chess-electron",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,10 +19,11 @@
   },
   "homepage": "https://github.com/happy0/ssb-chess-electron#readme",
   "dependencies": {
-    "ssb-chess-mithril": "1.2.2",
-    "ssb-client": "^4.9.0"
+    "ssb-chess-data-access": "2.0.0",
+    "ssb-chess-mithril": "2.0.1"
   },
   "devDependencies": {
+    "ssb-client": "^4.9.0",
     "electron": "^13.0.1",
     "electron-builder": "^22.10.5"
   }
