@@ -20,7 +20,7 @@
   "homepage": "https://github.com/happy0/ssb-chess-electron#readme",
   "dependencies": {
     "ssb-chess-data-access": "2.0.0",
-    "ssb-chess-mithril": "2.0.0"
+    "ssb-chess-mithril": "2.0.1"
   },
   "devDependencies": {
     "ssb-client": "^4.9.0",
